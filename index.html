@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>ISAK Insider</title>
-
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,45 +12,70 @@
     </head>
 
     <body>
-        <div id="container">
-            <div id="topbar">
-                <div class="fixedwidth"> 
-                    <div id="logodiv">
-                        <img src="Images/logo_inverted.png" />
-                    </div>
-                </div>
-               
-                <div id="searchbar">
-                    <input type="text" placeholder="Search">  
-                  
-                </div>
-                
-            </div>
-            
-            
-            
-            <div id="headlinebar">
-                <div class="fixedheadline">
-                    <div id="headlinelogo">
-                        <img src="Images/logo.png" />
-                    </div>
-                </div>
-            </div>
+      <div class="topbar">
+          <div class="fixedwidth"> 
+              <div class="logodiv">
+                  <img src="Images/logo_inverted.png" />
+              </div>
+          </div>
 
-            <div id="menu-bar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+          <div class="searchbar">
+              <input type="text" placeholder="Search">  
+
+          </div>
+      </div>
+        <div class="container">
+          <div class="headlinebar">
+              <div class = "dateComplaints">
+                <b><p id="dateWithMeQuestionMark"></p></b>
+
+                <script>
+  document.getElementById("dateWithMeQuestionMark").innerHTML = new Date().toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'});
+</script>
+                <p style = "font-size: 0.75rem">SEND YOUR FEEDBACK</p>
+              </div>
+              <div class="fixedheadline">
+                  <div class="headlinelogo">
+                      <img src="Images/logo.png" />
+                  </div>
+              </div>
+              <div>
+                about us
+              </div>
+          </div>
+
+            <div class = "headerBox">
+              <p class = "headerBox1"> <b>[CONTENT] </b> </p>
+              <p class = "headerBox1"> <b>[CONTENT] </b> </p>
+              <p class = "headerBox1"> <b>[CONTENT] </b> </p>
+              <p class = "headerBox1"> <b>[CONTENT] </b> </p>
+              <p class = "headerBox1"> <b>[CONTENT] </b> </p>
             </div>
+            <hr class="solid">
 
-            
-            
 
+            <div class="boxy_thingy">
+              <div class="boxy_thingy_child">
+                <img class = "boxdiv" src="Images/placeholderpic.png" />
+                <div class = "boxy_thingy_title">[this was a sleep deprived Nhan]</div>
+              </div>
+              <div class="boxy_thingy_child">
+                <img class = "boxdiv" src="Images/placeholderpic.png" />
+                <div class = "boxy_thingy_title">[this was a sleep deprived Nhan] </div>
+              </div>
+              <div class="boxy_thingy_child">
+                <img class = "boxdiv" src="Images/placeholderpic.png" />
+                <div class = "boxy_thingy_title">[this was a sleep deprived Nhan] </div>
+              </div>
+              <div class="boxy_thingy_child">
+                <img class = "boxdiv"  src="Images/placeholderpic.png" />
+                <div class = "boxy_thingy_title">[this was a sleep deprived Nhan] </div>
+              </div>
+            </div>
+            <div id="middle">
+
+            </div>
         </div>
-
+      </div>
     </body>
-    
 </html>
